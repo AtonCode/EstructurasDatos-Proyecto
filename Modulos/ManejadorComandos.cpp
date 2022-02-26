@@ -2,6 +2,7 @@
 #include <string.h>
 #include <iomanip>
 #include "ManejadorComandos.h"
+#include "Component1.hpp"
 
 using namespace std; 
 
