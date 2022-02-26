@@ -1,2 +1,2 @@
 language = "bash"
-run = "g++ Modulos/ManejadorComandos.cpp main.cpp; ./a.out"
+run = "g++ Modulos/main.cpp main.cpp; ./a.out"

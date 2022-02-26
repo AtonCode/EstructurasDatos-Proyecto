@@ -4,7 +4,7 @@ Gupo 2
 Abril Cano & Alejandro Sacristan & Humberto Rueda
 
 */
-
+/*
 #include <iostream>
 #include <cstdlib>
 #include <string>
@@ -113,3 +113,5 @@ return 0;
 
   
   //manejadorComandos();
+
+*/
