@@ -46,11 +46,6 @@ int **pixel_value = new int*[num_of_rows];
         pixel_value[i] = new int[num_of_cols];
     }
 
-int **integral = new int*[num_of_rows];
-    for(int i = 0; i < num_of_rows; ++i) {
-        integral[i] = new int[num_of_cols];
-    }
-
     for (row = 0; row < num_of_rows; row++){    //record the pixel values
         for (col = 0; col < num_of_cols; col++){
              ss >> pixel;
