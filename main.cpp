@@ -8,7 +8,7 @@ Comando de Ejecucion: g++ -std=c++11 Modulos/ManejadorComandos.cpp main.cpp -o E
 
 */
 
-#include "Modulos/Controller.hpp"
+
 #include "Modulos/ManejadorComandos.h"
 
 using namespace std;
