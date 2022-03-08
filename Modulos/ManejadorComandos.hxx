@@ -84,10 +84,10 @@ void manejadorComandos(Img &img, Vol &v){
         char *num = ptr;
         v = cargar_volumen(base,stoi(num)); 
         if(v.imagenes.size()>0){
-          cout<<"El volumen "<<base<<" ha sido cargado"<<endl;
+          cout<<"El volumen "<<base<<" !Carga Exitosa¡"<<endl;
         }
         else{
-          cout<<"El volumen "<<base<<" no ha podido ser cargado"<<endl;
+          cout<<"El volumen "<<base<<" Volumen no Cargado :( "<<endl;
         }
         encontrado = true;
       }

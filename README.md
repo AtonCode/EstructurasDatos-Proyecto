@@ -3,6 +3,8 @@
 ## Compilar
 g++ -std=c++11 main.cpp -o EstructurasProyecto && ./EstructurasProyecto
 
+alias run="g++ -std=c++11 main.cpp -o EstructurasProyecto && ./EstructurasProyecto"
+
 ## Comandos:
 
 cargar_imagen [nombreImagen.pgm]

@@ -118,7 +118,7 @@ Vol cargar_volumen (string nombreBase, unsigned int cant){
   for(int i = 1; i < cant+1; i++){
     if(i < 10){
       rutaImagen = nombreBase + "/" + nombreBase + "0" + to_string(i) + ".ppm";
-      //cout<<s<<endl;
+      cout<<rutaImagen<<endl;
       //cout<<nombre<<"/"<<nombre<<"0"<<i<<".ppm"<<endl;
       img = cargar_imagen(rutaImagen);
       if(img.height != 0)
