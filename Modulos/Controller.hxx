@@ -415,5 +415,3 @@ string proyeccion2D (string dir, string criterio, string nombre, Vol v){
   return file;
 }
 
-
-
