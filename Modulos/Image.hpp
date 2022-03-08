@@ -8,34 +8,17 @@
 
 using namespace std;
 
-class Image{
-
-  private:
-
-    vector< vector<Pixel> > vectorPixeles;
-    string comment;
-    string name;
-    string px;
-    unsigned int height = 0;
-    unsigned int width = 0;
-    unsigned int max = 0;
-
-
-  Public:
-
-    Image(
-          string _px, string _name,
-          string _comment,
-          unsigned int _height,
-          unsigned int _width,
-          unsigned int _max
-        );
-
-    void getInfo_imagen();
-    Image cargar_imagen (string _nombreRuta);
-    
+struct Img
+{
+  string name;
+  string px;
+  string comment;
+  unsigned int height = 0;
+  unsigned int width = 0;
+  unsigned int max = 0;
+  vector< vector<pixel> > valores;
 };
 
-//#include "Image_HPP.hxx"
+#include "Image.hxx"
 
 #endif /*Image_HPP*/

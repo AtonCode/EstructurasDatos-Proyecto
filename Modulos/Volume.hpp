@@ -11,29 +11,16 @@
 
 using namespace std;
 
-class Volume{
+struct Vol{
 
-  Private:
-    vector <Image> vectorImages;
-    string name;
-    unsigned int x;
-    unsigned int y; 
-    unsigned int z;
+  string name;
+  unsigned int x;
+  unsigned int y; 
+  unsigned int z;
+  vector <Img> imagenes;
 
-  Public:
-
-    Volume(
-          vector <Image> _vectorImages,
-          string _baseName,
-          unsigned int x,
-          unsigned int y,
-          unsigned int z
-
-    );
-    void getInfo_volumen();
-    Volume cargar_volumen (string _nombreBase, unsigned int _cantidadImages);
 };
 
-//#include "Volume.hxx"
+#include "Volume.hxx"
 
 #endif

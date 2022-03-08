@@ -1,112 +1,57 @@
-// g++ -std=c++11 Modulos/ManejadorComandos.cpp main.cpp -o EstructurasProyecto && ./EstructurasProyecto
 /*
-Gupo 2
-Abril Cano & Alejandro Sacristan & Humberto Rueda
+
+Proyecto Estructuras de Datos 2022-10 Javeriana
+Grupo 2:
+  Abril Cano & Alejandro Sacristan & Humberto Rueda.
+
+Comando de Ejecucion: g++ -std=c++11 Modulos/ManejadorComandos.cpp main.cpp -o EstructurasProyecto && ./EstructurasProyecto
 
 */
-/*
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <fstream>
-#include <sstream>
+
+#include "Modulos/Controller.hpp"
 #include "Modulos/ManejadorComandos.h"
 
 using namespace std;
 
 int main() {
+  //system("clear");
   
-  clearTerminal('l');
+  Img img;
+  Vol v;
   
-    int row = 0, col = 0, num_of_rows = 0, num_of_cols = 0;
-    stringstream ss;    
-    ifstream infile("Recursos/Imagenes2D/img_02.pgm", ios::binary);
-
-    string inputLine = "";
-
-    getline(infile,inputLine);      // read the first line : P5
-    if(inputLine.compare("P5") != 0) cerr << "Version error" << endl;
-    cout << "Version : " << inputLine << endl;
-
-    getline(infile,inputLine);  // read the second line : comment
-    cout << "Comment : " << inputLine << endl;
-
-    ss << infile.rdbuf();   //read the third line : width and height
-    ss >> num_of_cols >> num_of_rows;
-    cout << num_of_cols << " columns and " << num_of_rows << " rows" << endl;
-
-    int max_val;  //maximum intensity value : 255
-    ss >> max_val;
-    cout<<max_val;
-
-    unsigned char pixel;
-
-int **pixel_value = new int*[num_of_rows];
-    for(int i = 0; i < num_of_rows; ++i) {
-        pixel_value[i] = new int[num_of_cols];
+  manejadorComandos(img,v);
+  
+  //img = cargar_imagen("t1_icbm_5mm_/t1_icbm_5mm_01.ppm");
+  
+  /*
+  ofstream myfile;
+  string nombre = "Prueba";
+  myfile.open (nombre);
+  for (int i = 0; i < 216; i++){
+    for (int j = 0; j < 180; j++){
+      myfile<<img.valores[i][j].r<<" "<<img.valores[i][j].g<<" "<<img.valores[i][j].b<<" ";
     }
+    myfile<<endl;
+  }
+  myfile.close();
+  */
+  
+  //v = cargar_volumen("t1_icbm_5mm_",36);
+  /*
+  if(v.imagenes.size()> 0){
+    //cout<<v.name<<endl;
+    cout<<"Volumen Cargado con exito"<<endl;
+  }
+  */
+  //proyeccion2D ('y',"mediana","t1_icbm_5mm_",v);
+  //v = cargar_volumen("IM-211-0003-t2",12); 
 
-    for (row = 0; row < num_of_rows; row++){    //record the pixel values
-        for (col = 0; col < num_of_cols; col++){
-             ss >> pixel;
-             pixel_value[row][col]= pixel;
-        }
-    }
-
-
-integral[0][0]=pixel_value[0][0];    
-for(int i=1; i<num_of_cols;i++){            //compute integral image
-integral[0][i]=integral[0][i-1]+pixel_value[0][i];
-
-} 
-for (int i=1;i<num_of_rows; i++){
-integral[i][0]=integral[i-1][0]+pixel_value[i][0];
-}
-for (int i = 1; i < num_of_rows; i++){  
-for (int j = 1; j < num_of_cols; j++){
-integral[i][j] = integral[i - 1 ][j] + integral [i][j - 1] - integral[i - 1] [j - 1] + pixel_value[i][j]; 
-}
+  return 0;
 }
 
-    ofstream output1("pixel_value.txt");  // output the intensity values of the pgm file
-    for (int k=0; k<num_of_rows; k++)
-    {
-        for (int r=0; r<num_of_cols; r++)
-        {
-            output1 << pixel_value[k][r] << " ";
-        }
-        output1 << ";" << endl;
-    }
-output1.close();
 
-    ofstream output2("integral_value.txt");    // output the integral image
-    for (int a=0; a<num_of_rows; a++)
-    {
-        for (int b=0; b<num_of_cols; b++)
-        {
-            output2 << integral[a][b] << " ";
-        }
-        output2 << ";" << endl;
-    }
-output2.close();
-
-for(int i = 0; i < num_of_rows; ++i) {
-        delete [] pixel_value[i];
-}
-    delete [] pixel_value;
-
-for(int i = 0; i < num_of_rows; ++i) {
-        delete [] integral[i];
-}
-    delete [] integral;
-
-infile.close();  
-system("pause");
-return 0;
-}
 
 
   
-  //manejadorComandos();
 
-*/
+
