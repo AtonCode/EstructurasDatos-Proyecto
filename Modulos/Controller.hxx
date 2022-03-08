@@ -1,5 +1,10 @@
 #include "Controller.hpp"
-
+/**
+ * @brief Funcion que carga la imagen
+ * 
+ * @param nombre nombre de la imagen pgm
+ * @return Img imagen cargada
+ */
 Img cargar_imagen (string nombre){
   ifstream entrada;
   Img temp;
@@ -106,7 +111,13 @@ Img cargar_imagen (string nombre){
   }
 }
 
-
+/**
+ * @brief Funcion para cargar el volumen
+ * 
+ * @param nombreBase nombre de la imagen ppm
+ * @param cant eje z que se usa para recorrer la imagen
+ * @return Vol volumen cargado
+ */
 Vol cargar_volumen (string nombreBase, unsigned int cant){
   Vol temp;
   temp.z = cant;
@@ -162,7 +173,15 @@ void info_volumen(Vol v){
     cout<<"Tamaño: "<<v.z<<endl;
   }
 }
-
+/**
+ * @brief Funcion que proyecta la imagen en 2D
+ * 
+ * @param dir Direccion de la proyeccion
+ * @param criterio mediana, promedio, min o max
+ * @param nombre nombre del volumen
+ * @param v dato de tipo volumen
+ * @return string retorna el archivo con la proyección
+ */
 string proyeccion2D (string dir, string criterio, string nombre, Vol v){
   //variables para las diferentes direcciones y tamaños
   int primero;

@@ -1,6 +1,13 @@
 #ifndef Pixel_HPP
 #define Pixel_HPP
-
+/**
+ * @brief Estructura para guardar los datos de un pixel
+ * @param r color r
+ * @param g color g
+ * @param b color b
+ * @param gr color gris
+ * 
+ */
 struct Pixel{
 
   int r = 0;

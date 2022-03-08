@@ -10,7 +10,14 @@
 
 
 using namespace std;
-
+/**
+ * @brief Estrucutra del volumen
+ * @param name el nombre del archivo vol
+ * @param x coordenada x
+ * @param y coordenada y
+ * @param z coordenad z
+ * @param imagenes vector de imagenes
+ */
 struct Vol{
 
   string name;
