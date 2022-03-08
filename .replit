@@ -1,2 +1,2 @@
 language = "bash"
-run = "g++ Modulos/main.cpp main.cpp; ./a.out"
+run = "g++ -std=c++11 main.cpp -o EstructurasProyecto && ./EstructurasProyecto"

@@ -16,9 +16,9 @@ struct Img
   unsigned int height = 0;
   unsigned int width = 0;
   unsigned int max = 0;
-  vector< vector<pixel> > valores;
+  vector< vector<Pixel> > valores;
 };
 
-#include "Image.hxx"
+//#include "Image.hxx"
 
 #endif /*Image_HPP*/

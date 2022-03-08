@@ -9,6 +9,6 @@ struct Pixel{
   int gr = 0;
 };
 
-#include "Pixel.hxx"
+//#include "Pixel.hxx"
 
 #endif /*Pixel_HPP*/

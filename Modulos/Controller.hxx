@@ -43,9 +43,9 @@ Img cargar_imagen (string nombre){
         }else
         if( i >= 4 ){
           if(temp.px == "P2"){
-            vector<pixel> vtemp;
+            vector<Pixel> vtemp;
             char *ptr = strtok(linea," ");
-            pixel ptemp;
+            Pixel ptemp;
             while (ptr != NULL){
               ptemp.gr = stoi(ptr);
               vtemp.push_back(ptemp);
@@ -60,9 +60,9 @@ Img cargar_imagen (string nombre){
           }
           
           if (temp.px == "P3"){
-            vector<pixel> vtemp;
+            vector<Pixel> vtemp;
             char *ptr = strtok(linea," ");
-            pixel ptemp;
+            Pixel ptemp;
             while (ptr != NULL){
               if(cont == 1){
                 //cout<<"r: "<<ptr<<endl;
