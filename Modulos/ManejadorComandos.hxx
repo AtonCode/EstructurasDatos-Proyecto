@@ -1,16 +1,3 @@
-#include "Controller.hpp"
-
-
-void clearTerminal(char os){
-
-  if(os == 'W'){
-    std::system("cls");
-  }
-  else{
-    std::system("clear");
-  }
-
-}
 
 bool helpCommands(){
 
@@ -62,19 +49,19 @@ void manejadorComandos(Img &img, Vol &v){
       //cout<<"if"<<endl;
       char *ptr = strtok(opcion," ");
   
-      if (strcmp(opcion,"clear")==0){
-        clearTerminal('l'); 
+      if (strcmp(ptr,"clear")==0){
+          system("clear");
       }
 
-      if (strcmp(opcion,"cls")==0){
-        clearTerminal('W');
+      if (strcmp(ptr,"cls")==0){
+          system("cls");
       }
 
-      if (strcmp(opcion,"ayuda")==0){
+      if (strcmp(ptr,"ayuda")==0){
         encontrado = helpCommands(); 
       }
 
-      if(strcmp(opcion,"salir")==0){
+      if(strcmp(ptr,"salir")==0){
         exit(1);
       }
 
