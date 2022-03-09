@@ -1,15 +1,3 @@
-#ifndef Volume_HPP
-#define Volume_HPP
-
-#include <vector>
-#include <string.h>
-#include <string>
-#include <fstream>
-
-#include "Image.hpp"
-
-
-using namespace std;
 /**
  * @brief Estrucutra del volumen
  * @param name el nombre del archivo vol
@@ -18,6 +6,12 @@ using namespace std;
  * @param z coordenad z
  * @param imagenes vector de imagenes
  */
+
+#ifndef Volume_HPP
+#define Volume_HPP
+
+#include "Image.hpp"
+
 struct Vol{
 
   string name;

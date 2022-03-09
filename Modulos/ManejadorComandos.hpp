@@ -2,7 +2,7 @@
 #define ManejadorComandos_HPP
 
 #include "Controller.hpp"
-using namespace std;
+
 
 void manejadorComandos(Img &i, Vol &v);
 bool helpComands();

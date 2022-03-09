@@ -1,5 +1,3 @@
-#ifndef Pixel_HPP
-#define Pixel_HPP
 /**
  * @brief Estructura para guardar los datos de un pixel
  * @param r color r
@@ -8,6 +6,12 @@
  * @param gr color gris
  * 
  */
+
+#ifndef Pixel_HPP
+#define Pixel_HPP
+
+using namespace std;
+
 struct Pixel{
 
   int r = 0;

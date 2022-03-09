@@ -1,12 +1,3 @@
-#ifndef Image_HPP
-#define Image_HPP
-
-#include <vector>
-#include <string.h>
-#include <string>
-#include "Pixel.hpp"
-
-using namespace std;
 /**
  * @brief Estructura de una imagen
  * @param name nombre de la imagen
@@ -17,6 +8,15 @@ using namespace std;
  * @param max pixel maximo de la imagen
  * @param valores vector de vectores de pixeles
  */
+
+#ifndef Image_HPP
+#define Image_HPP
+
+#include <vector>
+#include <string.h>
+#include <string>
+#include "Pixel.hpp"
+
 struct Img
 {
   string name;

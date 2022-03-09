@@ -3,20 +3,12 @@
 
 #include <iostream>
 #include <iomanip>
-#include <string.h>
-#include <string>
 #include <cstdlib>
 #include <list> 
-#include <vector>
 #include <fstream>
 #include <set>
 #include <iterator>
-
-#include "Pixel.hpp"
-#include "Image.hpp"
 #include "Volume.hpp"
-
-using namespace std;
 
 
 // Entrega 1
