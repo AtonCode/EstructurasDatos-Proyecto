@@ -159,6 +159,12 @@ Vol cargar_volumen (string nombreBase, unsigned int cant){
   return temp;
 }
 
+/**
+ * @brief Funcion que muestra por pantalla informacion
+ *        almacenada en la structur de una Img como nombre, h,w. Vigila
+ *        de que esta imagen se encuentre cargada antes de dar algun resultado
+ * @param i identifica la imagen que ingresa por parametro
+ */
 void info_imagen(Img i){
   if (i.height != 0 ){
     cout<<"Imagen cargada en memoria: "<<i.name<<endl;
@@ -167,6 +173,13 @@ void info_imagen(Img i){
     cout<<"No hay una imagen guardada en memoria"<<endl;  
 }
 
+/**
+ * @brief Funcion que muestra por pantalla informacion
+ *        almacenada en la structur de una Vol como nombre y tamano
+ *        de que esta imagen se encuentre cargada antes de dar algun resultado
+ * 
+ * @param v identifica el volumen que ingresa por parametro
+ */
 void info_volumen(Vol v){
   if(v.imagenes.size() > 0){
     cout<<"Imagen cargada en memoria: "<<v.name<<endl;

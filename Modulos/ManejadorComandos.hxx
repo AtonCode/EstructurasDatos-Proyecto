@@ -1,4 +1,8 @@
-
+/**
+ * @brief Funcion que imprime en pantalla el menu de comandos
+ * 
+ * @return true si fue ejecutado corectamente
+ */
 bool helpCommands(){
 
     cout << "\t|-" <<  setfill('-') << setw(100) << "-|" << endl;
@@ -36,6 +40,15 @@ bool helpCommands(){
     
 }
 
+
+/**
+ * @brief Funcion que permite crear el bucle de la consola que lee comandos
+ *        apartir de los comados que lee es capaz de ejecutar las funciones
+ *        adecuadas que esten elazadas a este mendiente if y else
+ * 
+ * @param img Resive la direccion de un apuntador al espacio creado en el main para una img
+ * @param v Resive la direccion de un apuntador al espacio creado en el main para un vol
+ */
 void manejadorComandos(Img &img, Vol &v){
 
   char *opcion = new char[500];

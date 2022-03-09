@@ -1,3 +1,9 @@
+/**
+ * @file Controller.hpp
+ * @brief Controlador de las funciones
+ * 
+ */
+
 #ifndef Controller_HPP
 #define Controller_HPP
 
