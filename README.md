@@ -10,7 +10,7 @@ alias run="g++ -std=c++11 main.cpp -o EstructurasProyecto && ./EstructurasProyec
 cargar_imagen [nombreImagen.pgm]
 info_imagen [nombreImagen.pgm]
 
-cargar_volumen [IM-211-0003-t2 30]
-info_volumen [IM-211-0003-t2]
+cargar_volumen t1_icbm_5mm_ 36
+info_volumen t1_icbm_5mm_
 
-proyeccion2D ( string dir, string criterio, string nombre );
+proyeccion2D z promedio t1_icbm_5mm_
