@@ -1,6 +1,6 @@
 /*
  * @file main.cpp
- * @author Grupo 2: Abril Cano & Alejandro Sacristan & Humberto Rueda.
+ * @author's Grupo 2: Abril Cano & Alejandro Sacristan & Humberto Rueda.
  * @brief Proyecto Estructuras de Datos 2022-10 Javeriana
  * @version 0.1
  * @date 2022-03-08
