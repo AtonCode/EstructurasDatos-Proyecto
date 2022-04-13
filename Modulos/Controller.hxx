@@ -410,6 +410,7 @@ string proyeccion2D (string dir, string criterio, string nombre, Vol v){
       myfile<<endl;
     }
   }
+  cout<<"hola";
   //Para la mediana hace falta realizar el calculo pues ya tenemos todos los números
   if(criterio == "mediana"){
     //recorremos para cada posicion de la matriz el set que contienen todos los numeros en orden 
